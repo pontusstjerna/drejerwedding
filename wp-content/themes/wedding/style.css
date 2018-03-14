@@ -19,7 +19,32 @@ body {
     font-family: 'Handlee', cursive;
 }
 
+.body-container {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+}
+
 .header-container {
-    background-color: #00000022;
+    background: linear-gradient(#a0a0a011, #00000011);
     padding: 1em;
+}
+
+.menu-container {
+    padding: 0.5em;
+}
+
+.menu-item {
+    padding: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    text-decoration: none;
+    font-size: 22px;
+    color: #505050;
+    border-top: 1px solid;
+}
+
+.menu-item:hover {
+    border-top: 3px solid;
+    transition-duration: 100;
 }

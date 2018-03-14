@@ -10,9 +10,15 @@
 </head>
 <body>
     <div class="header-container">
-        <ul>
-            Home
-        </ul>
+        <div class="menu-container">
+            <?php
+                $pages = get_pages();
+                foreach($pages as $page) {
+                    $menuItem = '<a class="menu-item" href="#' . $page->post_name . '">' . $page->post_title . '</a>';
+                    echo $menuItem;
+                }
+            ?>
+        </div>
     </div>
 </body>
 </html>

@@ -1,2 +1,9 @@
 <?php get_header(); ?>
-<h1 class="test">This wedding will be a fucking blast!</h1>
+<div class="body-container">
+    <?php 
+        $pages = get_pages();
+        foreach($pages as $page) {
+            echo $page->post_content;
+        }
+    ?>
+</div>
