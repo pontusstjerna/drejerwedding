@@ -17,17 +17,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
     text-align: center;
     font-family: 'Handlee', cursive;
+    background-color: #dddddd;
 }
 
 .body-container {
-    background-color: white;
-    width: 70%;
-    margin: auto;
+    margin-top: 3em;
 }
 
 .header-container {
-    background: linear-gradient(#a0a0a011, #00000011);
+    background-color: #eeeeeecc;
     padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .menu-container {
@@ -47,4 +49,16 @@ body {
 .menu-item:hover {
     border-top: 3px solid;
     transition-duration: 100;
+}
+
+.content-container {
+    margin-top: 2em;
+    box-shadow: 0 5px 10px black;
+    background-color: white;
+    border: 30px solid #fcf8f8f8;
+}
+
+.content-header {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 5em;
 }
