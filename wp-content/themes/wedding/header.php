@@ -10,14 +10,15 @@
 </head>
 <body>
     <div class="header-container">
-        <div class="menu-container">
-            <?php
-                $pages = get_pages();
-                foreach($pages as $page) {
-                    $menuItem = '<a class="menu-item" href="#' . $page->post_name . '">' . $page->post_title . '</a>';
-                    echo $menuItem;
-                }
-            ?>
+        <div id="menu-container">
+            <?php foreach(get_pages() as $page): ?>
+                <button 
+                    class="menu-item"
+                    id=<?php echo '"menu-' . $page->post_name . '"' ?>
+                    >
+                    <?php echo $page->post_title ?>
+                </button>
+            <?php endforeach; ?>
         </div>
     </div>
 </body>
