@@ -9,9 +9,25 @@ function wedding_script_enqueue() {
         'all'
      );
 
+     wp_enqueue_style( 
+        'stickymenu', 
+        get_template_directory_uri() . '/css/stickymenu.css', 
+        array(), 
+        '1.0.0',
+        'all'
+     );
+
+     wp_enqueue_style( 
+        'pages', 
+        get_template_directory_uri() . '/css/pages.css', 
+        array(), 
+        '1.0.0',
+        'all'
+     );
+
     wp_enqueue_style(
         'google-fonts',
-        'https://fonts.googleapis.com/css?family=Handlee|Herr+Von+Muellerhoff',
+        'https://fonts.googleapis.com/css?family=Handlee|VT323|Raleway|Pinyon+Script',
         false
     );
 

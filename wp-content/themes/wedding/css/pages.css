@@ -1,0 +1,28 @@
+h1 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 5em;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+}
+
+.page-0-outer {
+    background-color: #eeeeeecc;
+    padding: 15%;
+    background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-195235.jpg');
+}
+
+.page-0-inner {
+    border: 30px solid white;
+    background-color: #cec9be;
+    padding: 20%;
+    color: #404040;
+}
+
+.content-header {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 5em;
+}

@@ -1,0 +1,40 @@
+.header-container {
+    background-color: #eeeeeecc;
+    padding: 1.2em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.menu-item {
+    padding: 0.5em;
+    margin-left: 0.5em;
+    margin-top: 2px;
+    margin-right: 0.5em;
+    font-size: 22px;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    color: #505050;
+    background: none;
+    cursor: pointer;
+    border: none;
+    border-top: 1px solid;
+    outline: none;
+}
+
+.menu-item:hover {
+    margin-top: 0px;
+    border-top: 3px solid;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+}
+
+.active {
+    color: #202020;
+    border-top: 3px solid;
+}
+
+
+#menu-container {
+    padding: 0.5em;
+}
