@@ -9,17 +9,25 @@ h3 {
     font-size: 2em;
 }
 
-.page-0-outer {
-    background-color: #eeeeeecc;
-    padding: 15%;
-    background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-195235.jpg');
+.page-home-background {
+    background: url('../assets/stars.jpg'), #eeeeee55;
+    background-size: 500px 50%;
+    background-repeat: repeat-x;
+    padding: 20%;
 }
 
-.page-0-inner {
-    border: 30px solid white;
-    background-color: #cec9be;
+.page-home-parallax-background {
+    background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-195235.jpg');
+    background-attachment: fixed;
+    height: 20%;
+}
+
+.page-home-container {
+    border: 50px solid white;
+    background-color: rgb(234, 230, 219);
     padding: 20%;
     color: #404040;
+    /* box-shadow: 0 0 30px black; */
 }
 
 .content-header {

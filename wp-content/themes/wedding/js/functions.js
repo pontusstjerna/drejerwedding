@@ -11,11 +11,11 @@ jQuery(document).ready($ => {
         $('.header-container').css('top', adminBar.height());
     }
 
-    //$('.body-container').css('margin-top', $('.header-container').height() + (adminBar ? adminBar.height() : 0));
 
     function scrollToId(id) {
         $('html, body').animate({
             scrollTop: $('#' + id).offset().top
         }, 2000, 'swing', () => window.location.href = '#' + id);
     }
+
 });
