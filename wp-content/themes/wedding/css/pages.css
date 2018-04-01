@@ -9,11 +9,31 @@ h3 {
     font-size: 2em;
 }
 
+.page h2 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.page {
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #606060;
+}
+
 .page-home-background {
-    background: url('../assets/stars.jpg'), #eeeeee55;
+    /* background: url('assets/stars.jpg'), #eeeeee55;
     background-size: 500px 50%;
-    background-repeat: repeat-x;
-    padding: 20%;
+    background-repeat: repeat-x; */
+    background: #eeeeee33;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    padding-left: 20em;
+    padding-right: 20em;
 }
 
 .page-home-parallax-background {
@@ -27,7 +47,42 @@ h3 {
     background-color: rgb(234, 230, 219);
     padding: 20%;
     color: #404040;
-    /* box-shadow: 0 0 30px black; */
+    box-shadow: 0 0 30px black;
+}
+
+
+.page-frame-background {
+    background-color: rgb(234, 230, 219);
+    padding: 12em;
+}
+
+.page-frame-container {
+    border: 50px solid white;
+    background-color: white;
+}
+
+.page-frame-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.page-frame-container p {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.page-spacey-background {
+    background: linear-gradient(#eeeeeebb, #eeeeeebb), url('../assets/stars.jpg');
+    padding: 5em;
+    background-attachment: fixed;
+}
+
+.page-spacey-container {
+    font-family: 'Raleway';
+    color: #606060;
+    font-size: 1em;
+    font-weight: lighter;
 }
 
 .content-header {

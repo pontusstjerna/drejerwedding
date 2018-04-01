@@ -13,6 +13,7 @@ jQuery(document).ready($ => {
 
 
     function scrollToId(id) {
+        console.log('ID: ' + id);
         $('html, body').animate({
             scrollTop: $('#' + id).offset().top
         }, 2000, 'swing', () => window.location.href = '#' + id);

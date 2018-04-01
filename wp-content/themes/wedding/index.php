@@ -18,15 +18,18 @@
 <div class="body-container">
     <?php 
         $pages = get_pages(array('sort_column' => 'menu_order'));
-        foreach($pages as $page) {
+        foreach($pages as $page): ?>
+        <div <?php echo 'id="' . $page->post_name . '"'; ?>>
+        <?php
             $template = get_page_template_slug($page->ID);
             if ($template) { // We have a template
                 include $template;
             } else { // We do not have any template
-                echo apply_filters('the_content', $page->post_content);
+                include "page-regular.php";
             }
-        }
-    ?>
+        ?>
+        </div>
+    <?php endforeach; ?>
 </div>
 
 <?php get_footer(); ?>

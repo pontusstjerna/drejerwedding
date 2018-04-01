@@ -27,7 +27,7 @@ function wedding_script_enqueue() {
 
     wp_enqueue_style(
         'google-fonts',
-        'https://fonts.googleapis.com/css?family=Handlee|VT323|Raleway|Pinyon+Script',
+        'https://fonts.googleapis.com/css?family=Marck+Script|VT323|Raleway|Pinyon+Script',
         false
     );
 
