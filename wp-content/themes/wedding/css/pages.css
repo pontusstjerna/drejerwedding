@@ -37,9 +37,10 @@ h3 {
 }
 
 .page-home-parallax-background {
-    background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-195235.jpg');
+    background-image: url('../assets/forest.jpg');
     background-attachment: fixed;
-    height: 20%;
+    background-repeat: no-repeat;
+    background-size: 100%
 }
 
 .page-home-container {
@@ -53,7 +54,10 @@ h3 {
 
 .page-frame-background {
     background-color: rgb(234, 230, 219);
-    padding: 12em;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .page-frame-container {
