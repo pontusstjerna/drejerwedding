@@ -39,6 +39,27 @@ function wedding_script_enqueue() {
     );
 }
 
+function create_post_register_interest() {
+    $labels = array(
+        'name' => 'Register Interest',
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'hierarchical' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'page-attributes'
+            )
+        );
+
+    register_post_type( 'register_interest', $args );
+}
+
 add_action( 'wp_enqueue_scripts', 'wedding_script_enqueue' );
+add_action( 'init', 'create_post_register_interest' );
 
 ?>

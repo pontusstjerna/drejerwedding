@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 <div class="header-container">
     <div id="menu-container">
-        <?php foreach(get_pages(array('sort_column' => 'menu_order')) as $page): ?>
+        <?php foreach(getAllPages() as $page): ?>
             <button 
                 class="menu-item"
                 id=<?php echo '"menu-' . $page->post_name . '"' ?>
@@ -17,15 +17,20 @@
 
 <div class="body-container">
     <?php 
-        $pages = get_pages(array('sort_column' => 'menu_order'));
+        
+        $pages = getAllPages();
         foreach($pages as $page): ?>
         <div <?php echo 'id="' . $page->post_name . '"'; ?>>
         <?php
-            $template = get_page_template_slug($page->ID);
-            if ($template) { // We have a template
-                include $template;
-            } else { // We do not have any template
-                include "page-regular.php";
+            if ($page->post_type == 'register_interest') {
+                include 'page-register-interest.php';
+            } else {
+                $template = get_page_template_slug($page->ID);
+                if ($template) { // We have a template
+                    include $template;
+                } else { // We do not have any template
+                    include "page-regular.php";
+                }
             }
         ?>
         </div>
@@ -45,3 +50,18 @@
     }
 
 ?>
+
+<?php 
+
+function getAllPages() {
+    $pages = get_pages();
+    $pages = array_merge($pages, get_pages(array('post_type' => 'register_interest')));
+
+    usort($pages, 'compare');
+
+    return $pages;
+}
+
+function compare($a, $b) {
+    return strcmp($a->menu_order, $b->menu_order);
+}
