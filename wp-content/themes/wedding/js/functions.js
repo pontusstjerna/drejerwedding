@@ -19,4 +19,6 @@ jQuery(document).ready($ => {
         }, 2000, 'swing', () => window.location.href = '#' + id);
     }
 
+
+    
 });
