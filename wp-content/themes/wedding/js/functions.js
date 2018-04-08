@@ -1,5 +1,8 @@
 jQuery(document).ready($ => {
 
+    setDaysLeft();
+
+
     $('.menu-item').click((e) => {
         $('.menu-item').removeClass('active');
         $('#' + e.target.id).addClass('active');
@@ -20,5 +23,15 @@ jQuery(document).ready($ => {
     }
 
 
+
+
+    function setDaysLeft() {
+        let daysLeft = $('#days-left');
+        let text =  daysLeft.text().replace(/\s/g, '');
+        let ms = new Date(text).getTime() - new Date().getTime();
+        let days = Math.round((((ms / 1000) / 60) / 60) / 24);
+       // let days = ms;
+        daysLeft.text(days);
+    }
     
 });
